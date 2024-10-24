@@ -1,6 +1,12 @@
 <!-- The Side Bar -->
-
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+
+  <div class="top-right-button" style="position: absolute; top: 10px; right: 10px;">
+    <button type="button" class="btn btn-primary" id="sidebar-toggle">
+      <i class="fas fa-angles-left"></i> <!-- Default icon when expanded -->
+    </button>
+  </div>
+
   <header class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {%- if site.avatar != empty and site.avatar -%}
@@ -16,9 +22,14 @@
   </header>
   <!-- .profile-wrapper -->
 
+
+      <!-- Spacer for tabs (visible only when collapsed) -->
+      <div class="spacer" style="height: 80px; display: none;"></div> <!-- Adjust height as needed -->
+
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
-      <!-- home -->
+
+      <!-- Home -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
@@ -40,7 +51,7 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
     {% unless site.theme_mode %}
       <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
         <i class="fas fa-adjust"></i>
@@ -95,3 +106,64 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+<!-- JavaScript for Width-Toggling -->
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const toggleButton = document.getElementById('sidebar-toggle');
+  const spacer = document.querySelector('.spacer');
+  const icon = toggleButton.querySelector('i'); // Select the icon inside the button
+
+  toggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('sidebar-collapsed');
+    // Toggle spacer visibility
+    spacer.style.display = sidebar.classList.contains('sidebar-collapsed') ? 'block' : 'none';
+    
+    // Change the button icon based on sidebar state
+    if (sidebar.classList.contains('sidebar-collapsed')) {
+      icon.classList.remove('fa-angles-left');
+      icon.classList.add('fa-angles-right'); // Change to right icon when collapsed
+    } else {
+      icon.classList.remove('fa-angles-right');
+      icon.classList.add('fa-angles-left'); // Change to left icon when expanded
+    }
+  });
+</script>
+
+<!-- CSS for Sidebar Widths -->
+<style>
+  /* Expanded Sidebar */
+  #sidebar {
+    width: 260px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  /* Collapsed Sidebar */
+  #sidebar.sidebar-collapsed {
+    width: 80px;
+  }
+
+  /* Adjust Content Overflow */
+  .nav-link span {
+    display: inline;
+  }
+
+  /* Hide text in collapsed mode */
+  #sidebar.sidebar-collapsed .nav-link span {
+    display: none;
+  }
+
+  #sidebar.sidebar-collapsed .profile-wrapper {
+      display: none;
+  }
+
+  /* Toggle Button Styling */
+  .top-right-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1; /* Ensure the button is on top */
+  }
+
+
+</style>
