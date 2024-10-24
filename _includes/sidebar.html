@@ -112,20 +112,20 @@
   const sidebar = document.getElementById('sidebar');
   const toggleButton = document.getElementById('sidebar-toggle');
   const spacer = document.querySelector('.spacer');
-  const icon = toggleButton.querySelector('i'); // Select the icon inside the button
+  const icon = toggleButton.querySelector('i'); // Icon inside the button
+  const root = document.documentElement; // Access the CSS :root
 
   toggleButton.addEventListener('click', () => {
     sidebar.classList.toggle('sidebar-collapsed');
-    // Toggle spacer visibility
     spacer.style.display = sidebar.classList.contains('sidebar-collapsed') ? 'block' : 'none';
-    
-    // Change the button icon based on sidebar state
+
+    // Update CSS variable for sidebar width
     if (sidebar.classList.contains('sidebar-collapsed')) {
-      icon.classList.remove('fa-angles-left');
-      icon.classList.add('fa-angles-right'); // Change to right icon when collapsed
+      root.style.setProperty('--sidebar-width', '80px'); // Collapsed width
+      icon.classList.replace('fa-angles-left', 'fa-angles-right');
     } else {
-      icon.classList.remove('fa-angles-right');
-      icon.classList.add('fa-angles-left'); // Change to left icon when expanded
+      root.style.setProperty('--sidebar-width', '260px'); // Expanded width
+      icon.classList.replace('fa-angles-right', 'fa-angles-left');
     }
   });
 </script>
@@ -165,5 +165,50 @@
     z-index: 1; /* Ensure the button is on top */
   }
 
+/* Default spacing for expanded sidebar */
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  padding-left: 15px; /* Adjust padding */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
 
+/* Adjust spacing for collapsed sidebar */
+#sidebar.sidebar-collapsed .nav-link {
+  justify-content: center; /* Center the icons horizontally */
+  padding-left: 30px; /* Remove left padding */
+}
+
+/* Default styling for expanded sidebar */
+.sidebar-bottom .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align icons to the left */
+  padding-left: 0px;
+  width: 100%; /* Ensure they occupy full width */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Collapsed sidebar styling */
+#sidebar.sidebar-collapsed .sidebar-bottom .nav-link {
+  justify-content: center; /* Center the icons */
+  padding-left: 0;
+}
+
+/* Ensure consistent alignment for icons and buttons */
+.sidebar-bottom a, 
+.sidebar-bottom button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  width: 100%; /* Full width to match nav links */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Collapsed sidebar styling for mode-toggle button */
+#sidebar.sidebar-collapsed .sidebar-bottom #mode-toggle {
+  justify-content: center; /* Center the button */
+  padding: 0; /* Remove padding for a cleaner look */
+}
 </style>

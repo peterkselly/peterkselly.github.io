@@ -1282,7 +1282,7 @@ search {
     }
 
     #main-wrapper {
-      transform: translateX($sidebar-width);
+      transform: translateX(--sidebar-width);
     }
 
     #back-to-top {
@@ -1357,7 +1357,9 @@ search {
   }
 
   #main-wrapper {
-    margin-left: $sidebar-width;
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
   }
 
   #sidebar {
