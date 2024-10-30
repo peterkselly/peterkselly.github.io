@@ -9,6 +9,7 @@ export function modeWatcher() {
   }
 
   toggle.addEventListener('click', () => {
+    console.log('vlicked');
     modeToggle.flipMode();
   });
 }
