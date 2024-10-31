@@ -99,26 +99,47 @@
 </aside>
 <!-- #sidebar -->
 
-<!-- JavaScript for Width-Toggling -->
+<!-- JavaScript for Width-Toggling with Persistence -->
 <script>
-  const sidebar = document.getElementById('sidebar');
-  const toggleButton = document.getElementById('sidebar-toggle');
-  const spacer = document.querySelector('.spacer');
-  const icon = toggleButton.querySelector('i'); // Icon inside the button
-  const root = document.documentElement; // Access the CSS :root
+  document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('sidebar');
+    const toggleButton = document.getElementById('sidebar-toggle');
+    const spacer = document.querySelector('.spacer');
+    const icon = toggleButton.querySelector('i');
+    const root = document.documentElement;
 
-  toggleButton.addEventListener('click', () => {
-    sidebar.classList.toggle('sidebar-collapsed');
-    spacer.style.display = sidebar.classList.contains('sidebar-collapsed') ? 'block' : 'none';
-
-    // Update CSS variable for sidebar width
-    if (sidebar.classList.contains('sidebar-collapsed')) {
-      root.style.setProperty('--sidebar-width', '80px'); // Collapsed width
+    // Load saved state when page loads
+    const isCollapsed = localStorage.getItem('sidebarCollapsed') === 'true';
+    if (isCollapsed) {
+      sidebar.classList.add('sidebar-collapsed');
+      spacer.style.display = 'block';
+      root.style.setProperty('--sidebar-width', '80px');
       icon.classList.replace('fa-angles-left', 'fa-angles-right');
     } else {
-      root.style.setProperty('--sidebar-width', '260px'); // Expanded width
+      sidebar.classList.remove('sidebar-collapsed');
+      spacer.style.display = 'none';
+      root.style.setProperty('--sidebar-width', '260px');
       icon.classList.replace('fa-angles-right', 'fa-angles-left');
     }
+
+    // Toggle and save state when clicked
+    toggleButton.addEventListener('click', () => {
+      const willBeCollapsed = !sidebar.classList.contains('sidebar-collapsed');
+      
+      sidebar.classList.toggle('sidebar-collapsed');
+      spacer.style.display = willBeCollapsed ? 'block' : 'none';
+
+      if (willBeCollapsed) {
+        root.style.setProperty('--sidebar-width', '80px');
+        icon.classList.replace('fa-angles-left', 'fa-angles-right');
+      } else {
+        root.style.setProperty('--sidebar-width', '260px');
+        icon.classList.replace('fa-angles-right', 'fa-angles-left');
+      }
+
+      // Save the state
+      localStorage.setItem('sidebarCollapsed', willBeCollapsed);
+    });
   });
 </script>
 

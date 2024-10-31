@@ -15,6 +15,15 @@
   <meta name="apple-mobile-web-app-title" content="Peterselly" />
   <link rel="manifest" href="/assets/img/favicons/site.webmanifest" />
 
+<script>
+  // Check localStorage immediately
+  if (localStorage.getItem('sidebarCollapsed') === 'true') {
+    document.documentElement.style.setProperty('--sidebar-width', '80px');
+    // Add a class to body that we can use for initial state
+    document.documentElement.classList.add('sidebar-is-collapsed');
+  }
+</script>
+
   {%- capture seo_tags -%}
     {% seo title=false %}
   {%- endcapture -%}
