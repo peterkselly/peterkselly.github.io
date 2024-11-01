@@ -6,5 +6,9 @@
   .bundle
 {%- endif -%}
 ';
-
+.img-link {
+  &::before {
+    display: none !important; // Removes the loading animation
+  }
+}
 /* append your custom style below */
