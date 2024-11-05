@@ -1,0 +1,79 @@
+/* Expanded Sidebar */
+#sidebar {
+    width: 260px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  /* Collapsed Sidebar */
+  #sidebar.sidebar-collapsed {
+    width: 80px;
+  }
+
+  /* Adjust Content Overflow */
+  .nav-link span {
+    display: inline;
+  }
+
+  /* Hide text in collapsed mode */
+  #sidebar.sidebar-collapsed .nav-link span {
+    display: none;
+  }
+
+  #sidebar.sidebar-collapsed .profile-wrapper {
+      display: none;
+  }
+
+  /* Toggle Button Styling */
+  .top-right-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1; /* Ensure the button is on top */
+  }
+
+/* Default spacing for expanded sidebar */
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  padding-left: 15px; /* Adjust padding */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Adjust spacing for collapsed sidebar */
+#sidebar.sidebar-collapsed .nav-link {
+  justify-content: center; /* Center the icons horizontally */
+  padding-left: 30px; /* Remove left padding */
+}
+
+/* Default styling for expanded sidebar */
+.sidebar-bottom .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align icons to the left */
+  padding-left: 0px;
+  width: 100%; /* Ensure they occupy full width */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Collapsed sidebar styling */
+#sidebar.sidebar-collapsed .sidebar-bottom .nav-link {
+  justify-content: center; /* Center the icons */
+  padding-left: 0;
+}
+
+/* Ensure consistent alignment for icons and buttons */
+.sidebar-bottom a, 
+.sidebar-bottom button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  width: 100%; /* Full width to match nav links */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Collapsed sidebar styling for mode-toggle button */
+#sidebar.sidebar-collapsed .sidebar-bottom #mode-toggle {
+  justify-content: center; /* Center the button */
+  padding: 0; /* Remove padding for a cleaner look */
+}
