@@ -29,12 +29,12 @@ There are only 3 principal components, I told you the job was simple.
 
 The only one on the electrode board. This takes two inputs, the electrode signal and a common earlobe reference, outputting the amplified difference. The earlobe is commonly used for this purpose because there's nothing crazy happening under the skin like with the scalp, we can use this to normalize for the skin and heartbeat. 
 
-![Desktop View](/assets/img/post-images/IMG_1136.png){: width="854" height="480" }
+![Desktop View](/assets/img/post-images/IMG_1136.png){: width="427" height="240" }
 _Electrode board prototype(I know I used the wrong kind of LED). ~6x7cm_
 
 As I wrote earlier, those IAs need to be as close as we can get them to the electrodes. On the board each IA is as close as the pcb design software would let me to a through-hole via, which is where the gold electrodes will be soldered. And I'll get to describing that later. 
 
-![Desktop View](/assets/img/post-images/electrode_diagram.png){: width="854" height="480" }
+![Desktop View](/assets/img/post-images/electrode_diagram.png){: width="427" height="240" }
 _electrode spacing_
 
 The configuration of the electrodes is in a hexagonally spaced grid of 19. Each side length of the hex is 8cm, and the wire for each electrode tip is 1mm wide. The red circle is ~40mm in diameter which is my estimated projected area of the *hand knob* region on the scalp. 
