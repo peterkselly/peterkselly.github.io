@@ -1,5 +1,5 @@
 ---
-title: Software Archetecture
+title: Software Architecture
 date: 2024-11-1 18:00:00 +0000
 categories: [Software]
 description: Pipeline and tech-stack, design and planning
