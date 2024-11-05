@@ -1,6 +1,6 @@
 ---
 title: Learning Resources
-date: 2024-10-1 18:00:00 +0000
+date: 2024-11-1 18:00:00 +0000
 categories: [Learning]
 description: A collection of helpful resources I've found
 comments: false
