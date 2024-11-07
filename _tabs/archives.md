@@ -7,7 +7,7 @@ order: 2
 #### Email: 
 - peterkselly@gmail.com
 
-- selly.peter@tamu.edu
+- peter.selly@tamu.edu
 
 
 
