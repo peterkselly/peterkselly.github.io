@@ -10,7 +10,7 @@ include:
 
 ### Pipeline
 
-The job of the hardware is really simple. It has to get the data from the electrodes to the computer in a way that is organized and can function continuously. The difficulty is in designing the circuitry to process the incredibly weak input signals (look to the post I made about EEG limitations for more info). Weak analog signals are subject to analog noise from the outside sources. There's nothing we can do on the hardware side for limiting signals that conduct across the skin like those from facial muscles, but what we can do is amplify the signal as soon as possible to limit the effect of other contaminating analog signals. The amplifier, in our case an *instrumentation amplifier(IA)*, needs to be as close as possible to electrode and it needs to be supplied power. We need to amplify the signal in any case, but the term *active electrode* is used for configurations like this when the amplifiers are part of the electrodes themselves, I suppose because they are being actively powered. 
+The job of the hardware is really simple. It has to get the data from the electrodes to the computer in a way that is organized and can function continuously. The difficulty is in designing the circuitry to process the incredibly weak input signals (look to the post I made about EEG limitations for more info). Weak analog signals are subject to analog noise from the outside sources. There's nothing we can do on the hardware side for limiting signals that conduct across the skin like those from facial muscles —though there's some great blink-detection systems, but what we can do is amplify the signal as soon as possible to limit the effect of other contaminating analog signals. The amplifier, in our case an *instrumentation amplifier(IA)*, needs to be as close as possible to electrode and it needs to be supplied power. We need to amplify the signal in any case, but the term *active electrode* is used for configurations like this when the amplifiers are part of the electrodes themselves, I suppose because they are being actively powered. 
 
 To make it modular, The hardware system is comprized of two boards connected by ribbon cable:
 - **Electrode Board:** acquire and amplify
@@ -19,7 +19,7 @@ To make it modular, The hardware system is comprized of two boards connected by 
 The advantage of this is that we can swap electrode configurations just by plugging in a differently configured electrode board. We can't do much about the gold electrodes(more on that later) but we can also stack all of the expensive components like the ADCs and DSP on the main board to save cost.
 
 ![Desktop View](/assets/img/post-images/hardware_pipeline.png){: width="854" height="480" }
-_Abstracted pipeline for the hardware system_
+_Abstracted pipeline for the hardware system. One electrode board and one main board._
 
 There are only 3 principal components, I told you the job was simple.
 
@@ -37,15 +37,15 @@ As I wrote earlier, those IAs need to be as close as we can get them to the elec
 ![Desktop View](/assets/img/post-images/electrode_diagram.png){: width="427" height="240" }
 _electrode spacing_
 
-The configuration of the electrodes is in a hexagonally spaced grid of 19. Each side length of the hex is 8cm, and the wire for each electrode tip is 1mm wide. The red circle is ~40mm in diameter which is my estimated projected area of the *hand knob* region on the scalp. 
+The configuration of the electrodes is in a hexagonally spaced grid of 19. Each side length of the hex is 8cm, and the vias that connect to each electrode tip are 1mm wide. The red circle is ~40mm in diameter which is my estimated projected area of the *hand knob* region on the scalp. 
 
 ### Main Board
 
 #### Analog to Digital Convertors (ADC)
 
-This digitizes the data for us so our computer can interpret it as data. For our prototype, we're using the AD7177. There's not much to say about this one, all the info about it can be found on the datasheet. There's 5 total since each has 4 pseudo-differential channels for our 19 inputs. Each can be synced using the config defined in the datasheet. Each will have a single serial data out which will be sent to the DSP through an SPI interface.
+This digitizes the data for us so our computer can interpret it. For our prototype, we're using the AD7177. There's not much to say about this one, all the info about it can be found on the datasheet. There's 5 total since each has 4 pseudo-differential channels for our 19 inputs. Each can be synced using the config defined in the datasheet. Each will have a single serial data out which will be sent to the DSP through an SPI interface.
 
 
 #### Digital Signal Processor (DSP)
 
-I picked out the ADSP-BF527 for this. The only function of the DSP as of now is to drive the SPI clock for the ADCs and multiplex the 5 inputs from them to a single USB output. This can be done by writing simple firmware in C, just have to make sure it's filling the write buffers and the timing makes sense. This could certainly be done with a microcontroller to save around 20 bucks but this chip is capable of some signal processing that I could make use of later. I'd like to have some flexibility for later.
+I picked out the ADSP-BF527 for this. The only functions of the DSP as of now is to drive the SPI clock for the ADCs and multiplex the 5 inputs from them to a single USB output. This can be done by writing simple firmware in C, just have to make sure it's filling the write buffers and the timing makes sense. This could certainly be done with a microcontroller to save around 20 bucks but this chip is capable of some signal processing that I could make use of later. I'd like to have some flexibility.

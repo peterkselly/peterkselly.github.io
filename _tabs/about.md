@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 3
 ---
 
-I'm a researcher building a non-invasive BCI and this site is mostly to document the development of the project. BCI is hyper-interdisciplinary(Neuroscience, electrical engineering, human factors, signal processing, machine-learning, biomedical...) so development is slowed by me having to learn a lot. The benefit of that is that it's endlessly interesting and I can document and share the process of me figuring things out. Currently I'm the only contributor to the project.
+I'm a researcher building a non-invasive BCI and this site is mostly to document the development of the project. BCI is hyper-interdisciplinary(neuroscience, electrical engineering, human factors, signal processing, machine-learning, biomedical...) so development is slowed by me having to learn a lot. The benefit of that is that it's endlessly interesting and I can document and share the process of me figuring things out. Currently I'm the only contributor to the project.
 
 By the way, I recognize that public consciousness of BCI is pretty weak aside from fluff-pieces that only really show how cool they are. I will try to provide helpful resources and avoid technical language wherever possible but some of what I document will inevitably be hard to interpret. This is not a formal document, I will not be citing every paper or resource.
 
