@@ -1,6 +1,6 @@
 ---
 title: EEG and its limitations
-date: 2024-10-31 18:00:00 +0000
+date: 2024-10-31 19:00:00 +0000
 categories: [Planning / Concepts]
 description: Outline of the technology, what it measures, and what it can't.
 comments: false

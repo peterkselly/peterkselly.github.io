@@ -15,22 +15,22 @@ Here is a list of especially good online resources I've found helpful for this p
 
 | Resource                          | Notes|
 | --------------------------------- | ----------------  |
-| https://www.youtube.com/@professorgrsinha/            | Many good talks         |
-| https://www.youtube.com/watch?v=rFFmfNzpfnY                       | Great overview          |
-| https://www.youtube.com/@mlearnxyz                           | Open-source focus      |
-| https://www.youtube.com/watch?v=AjMdirPPnQQ | ML
-| https://www.youtube.com/playlist?list=PLCx-Whoii5hxp8_0kmXjsDkFqEqZnaROE | Playlist by anonymous YT account 
+| <https://www.youtube.com/@professorgrsinha/>            | Many good talks         |
+| <https://www.youtube.com/watch?v=rFFmfNzpfnY>                       | Great overview          |
+| <https://www.youtube.com/@mlearnxyz>                           | Open-source focus      |
+| <https://www.youtube.com/watch?v=AjMdirPPnQQ> | ML
+| <https://www.youtube.com/playlist?list=PLCx-Whoii5hxp8_0kmXjsDkFqEqZnaROE> | Playlist by anonymous YT account 
 
 
 ### Signal Processing / Math
 
 | Resource                          | Notes|
 | --------------------------------- | ----------------  |
-| https://www.youtube.com/watch?v=ViZYXxuxUKA            | Wavelet math         |
-| https://www.youtube.com/@ArtemKirsanov                      | Animated Comp. Neuro          |
-| https://www.youtube.com/@mikexcohen1                          | Insane quantity and quality, <br>read his book if you can      |
-| https://www.youtube.com/watch?v=AjMdirPPnQQ | ML
-| https://www.youtube.com/playlist?list=PLXc9qfVbMMN2TAoLHVW5NvNmJtwiHurzw | Time-series playlist
+| <https://www.youtube.com/watch?v=ViZYXxuxUKA>            | Wavelet math         |
+| <https://www.youtube.com/@ArtemKirsanov>                      | Animated Comp. Neuro          |
+| <https://www.youtube.com/@mikexcohen1>                         | Insane quantity and quality, <br>read his book if you can      |
+| <https://www.youtube.com/watch?v=AjMdirPPnQQ> | ML
+| <https://www.youtube.com/playlist?list=PLXc9qfVbMMN2TAoLHVW5NvNmJtwiHurzw> | Time-series playlist
 
 
 
@@ -38,21 +38,21 @@ Here is a list of especially good online resources I've found helpful for this p
 
 | Resource                          | Notes|
 | --------------------------------- | ----------------  |
-| https://www.youtube.com/watch?v=IXRDMI66CCo            | IA basics         |
-| https://www.youtube.com/watch?v=9lVwNfXHwoE                       | ADC basics          |
-| https://www.youtube.com/watch?v=utBQqcuOt9U                          | PCB      |
+| <https://www.youtube.com/watch?v=IXRDMI66CCo>            | IA basics         |
+| <https://www.youtube.com/watch?v=9lVwNfXHwoE>                       | ADC basics          |
+| <https://www.youtube.com/watch?v=utBQqcuOt9U>                          | PCB      |
 
 
 ### Other Projects, Communities, and Misc.
-- https://bciwiki.org/main.php
+- <https://bciwiki.org/main.php>
 
-- https://www.bci2000.org/mediawiki/index.php/Main_Page
+- <https://www.bci2000.org/mediawiki/index.php/Main_Page>
 
-- https://mne.tools/dev/index.html
+- <https://mne.tools/dev/index.html>
 
-- https://bci.games/
+- <https://bci.games/>
 
-- https://www.instructables.com/DIY-EEG-and-ECG-Circuit/
+- <https://www.instructables.com/DIY-EEG-and-ECG-Circuit/>
 
-- https://openeeg.sourceforge.net/doc/faq.html
+- <https://openeeg.sourceforge.net/doc/faq.html>
 
