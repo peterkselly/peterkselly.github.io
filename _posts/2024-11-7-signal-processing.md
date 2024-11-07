@@ -24,7 +24,7 @@ Then it's just a matter of getting the strengths of each component frequency **o
 Math is not my realm, I can't do the math justice in an explanation so I'm gonna keep this conceptual. This flavor of math lets us take a messy raw signal and decompose it's frequencies while maintaining some temporal resolution. There are a couple of transforms/algorithms that lets us do this that include wavelet transforms (discrete and continuous), wavelet packet analysis, and Hilbert-Huang transform. 
 
 ![Desktop View](/assets/img/post-images/raweeg.png){: width="700" height="700" }
-_Quick example of raw EEG data I generated with ai_
+_Quick example of raw EEG data I generated with ai, thus poor labeling_
 
 ![Desktop View](/assets/img/post-images/tfeeg.png){: width="700" height="700" }
 _Discrete Wavelet Transform (DWT) done on the generated data. You can see the 40Hz band increase dramatically twice and how that presents in both graphs. This pattern is much more difficult to make out from the raw._
