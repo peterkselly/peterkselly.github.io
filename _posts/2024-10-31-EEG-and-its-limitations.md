@@ -9,9 +9,11 @@ include:
 ---
 
 ## What does it measure?
-Not neuronal firings. In the cortex there are pyramidal neurons that are positioned perpendicular to the scalp --maybe *orthogonal* would be more accurate to say. When these cells fire there there is an extremely complicated cascade of cellular events that leads to a change in the relative charge in the extracellular space on either end of the cell. These are so called **local field potentials (LFPs)**, the video below explains it very well. Because there are so many of these pyramidal neurons and they are all faced the same way, if we zoom out, what happens is that areas of cortical tissue hold polar charge as a function of net activity that can conduct up to the scalp. 
+Not neuronal firings. In the cortex there are pyramidal neurons that are positioned perpendicular to the scalp --maybe *orthogonal* would be more accurate to say. When these cells fire there there is an extremely complicated cascade of cellular events that leads to an asymmetric change in the relative charge or areas outside the cell. These are so called **local field potentials (LFPs)**, the video below explains it very well. Because there are so many of these pyramidal neurons and they are all faced the same way, if we zoom out, what happens is that areas of cortical tissue hold polar charge as a function of net activity that can conduct up to the scalp. 
 
 {% include embed/youtube.html id='i2St7BeRz6A?si=WBET93Zm4PGEnt0l&t=195' %}
+
+What is great about any type of electrical recording is that there is great **temporal resolution**, meaning we can tell with great accuracy *when* a signal occurred. This is compared to something like fMRI which has a delayed response because it's measuring the BOLD response and not activity itself. This is particularly useful during training, because we can initiate a hand movement or movement imagery and have a time-accurate record of the resulting EEG signal.
 
 ## What are we giving up?
 
