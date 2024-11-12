@@ -18,7 +18,7 @@ _Great figure of hand knob region from https://doi.org/10.3390/medicina60020318_
 ![Desktop View](/assets/img/post-images/handknob2.jpg){: width="500" height="500" }
 _Annotated image of hand knob region from x.com/drharunyildiz_
 
-It's often said to have an "omega-shaped" appearance, hence the *knobby* name. Let's consider the 3D structure a little more. Remember from the EEG limitations post that EEG only works due to how the pyramidal neurons are all stacked side-by-side like toothpicks. The toothpick stack becomes polar from activation and so generates magnetic field, but the field can be canceled out by an opposing stack as well. So on the cortex with ridges and valleys, activation can be canceled out. It's 3D shape determines what can surfaces of the knob we can read a signal from and what surfaces we cant. Knowing that, what if I told you that not everyone's hand knob is shaped the same. I expect this to be a big hurdle for generalizability.
+It's often said to have an "omega-shaped" appearance, hence the *knobby* name. Let's consider the 3D structure a little more. Remember from the EEG limitations post that EEG only works due to how the pyramidal neurons are all stacked side-by-side like toothpicks. The toothpick stack becomes polar from activation and so generates magnetic field, but the field can be canceled out by an opposing stack as well. So on the cortex with all its ridges and valleys, some activation will be canceled out. It's 3D shape determines what can surfaces of the knob we can read a signal from and what surfaces we cant. Knowing that, what if I told you that not everyone's hand knob is shaped the same! I expect this to be a big hurdle for generalizability.
 
 ![Desktop View](/assets/img/post-images/gyrus.png){: width="450" height="450" }
 _General structure of cortical geometry_
@@ -30,7 +30,7 @@ This is speaking broadly about regions, and it's not particularly useful at high
 
 #### Proprioception - a fun lil aside
 
-*Theoretically* we could also decode hand movement through proprioception, the sense we have for body position. If you close your eyes, you still have an innate sense of where your limbs or located and positioned even without tactile input. This is because of little mechanoreceptors in your muscle spindles and tendons. One could imagine a BCI that works off of this muscle positioning data to determine movement.
+*Theoretically* we could also decode hand movement through proprioception, the sense we have for body position. If you close your eyes, you still have an innate sense of where your limbs or located and positioned even without tactile input. This is because of little mechanoreceptors in your muscle spindles and tendons. One could imagine a BCI that works off of this muscle positioning data for body tracking or to determine movement.
 
 ### What this means for us
 

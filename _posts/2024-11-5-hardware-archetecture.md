@@ -10,7 +10,7 @@ include:
 
 ### Pipeline
 
-The job of the hardware is really simple. It has to get the data from the electrodes to the computer in a way that is organized and can function continuously. The difficulty is in designing the circuitry to process the incredibly weak input signals (look to the post I made about EEG limitations for more info). Weak analog signals are subject to analog noise from the outside sources. There's nothing we can do on the hardware side for limiting signals that conduct across the skin like those from facial muscles —though there's some great blink-detection systems, but what we can do is amplify the signal as soon as possible to limit the effect of other contaminating analog signals. The amplifier, in our case an *instrumentation amplifier(IA)*, needs to be as close as possible to electrode and it needs to be supplied power. We need to amplify the signal in any case, but the term *active electrode* is used for configurations like this when the amplifiers are part of the electrodes themselves, I suppose because they are being actively powered. 
+The job of the hardware is really simple. It has to get the data from the electrodes to the computer in a way that is organized and can function continuously. The difficulty is in designing the circuitry to process the incredibly weak input signals (look to the post I made about EEG limitations for more info). Weak analog signals are subject to analog noise from outside sources. There's nothing we can do on the hardware side for limiting signals that conduct across the skin like those from facial muscles —though there're some great blink-detection systems— but what we can do is amplify the signal as soon as possible to limit the effect of other contaminating analog signals. The amplifier, in our case an *instrumentation amplifier(IA)*, needs to be as close as possible to electrode and it needs to be supplied power. We need to amplify the signal in any case, but the term *active electrode* is used for configurations like this when the amplifiers are part of the electrodes themselves, I suppose because they are being actively powered. 
 
 To make it modular, The hardware system is comprized of two boards connected by ribbon cable:
 - **Electrode Board:** acquire and amplify
@@ -27,7 +27,7 @@ There are only 3 principal components, I told you the job was simple.
 
 #### Instrumentation Amplifiers (IA)
 
-The only one on the electrode board. This takes two inputs, the electrode signal and a common earlobe reference, outputting the amplified difference. The earlobe is commonly used for this purpose because there's nothing crazy happening under the skin like with the scalp, we can use this to normalize for the skin and heartbeat. 
+The only one on the electrode board. This takes two inputs, the electrode signal and a common earlobe reference, and outputs the amplified difference. The earlobe is commonly used for this purpose because there's nothing crazy happening under the skin like with the scalp, we can use this to normalize for the skin and heartbeat. There is an argument for having both inputs on the scalp which theoretically would be able to better reject interference from signals conducting across the skin. Maybe I'll test that configuration at a later date.
 
 ![Desktop View](/assets/img/post-images/IMG_1136.png){: width="427" height="240" }
 _Electrode board prototype(I know I used the wrong kind of LED). ~6x7cm_
