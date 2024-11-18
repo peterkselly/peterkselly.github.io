@@ -9,7 +9,7 @@ include:
 ---
 Here is a list of especially good online resources I've found helpful for this project. I have a deep bias for videos/pods I can listen to while doing something else. I will update these as I go.
 
- For papers you can get pretty far by just searching terms on google scholar. And if you're not used to all the technical language you can use (with caution) an ai chatbot to clarify/rephrase passages. You may have trouble if you don't have a .edu login, in my experience papers may be posted on the Lab/PI's website or socials. It's also the internet, one may hypothetically elect to use more *~unsavory~* methods to get access after careful consideration for the moral ramifications. But seriously, consider supporting them if it's a small publication, this field is not very big yet.
+ For papers you can get pretty far by just searching terms on google scholar. And if you're not used to all the technical language you can use (with caution) an ai chatbot to clarify/rephrase passages. You may have trouble if you don't have a .edu login, in my experience papers may be posted on the Lab/PI's website or socials. It's also the age of the internet, one may hypothetically elect to use more *~unsavory~* methods to get access after careful consideration for the moral ramifications. But seriously, consider supporting them if it's a small publication, this field is not very big yet.
 
  I'm going to default to linking their youtube channels because that's how I keep track. If you are overwhelmed and have to read only one resource, **Mike X Cohen** is probably your best bet.
 

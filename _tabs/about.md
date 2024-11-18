@@ -14,7 +14,7 @@ By the way, I recognize that public consciousness of BCI is pretty weak aside fr
 | Knowledgeable                      | Learning          |
 | --------------------------------- | ----------------  |
 | Neuro/Electrophysiology           | ML                |
-| Human Factors                     | Electrical Engineering    |
+| Human Factors                     | Electrical Engineering / PCB Design    |
 | Hardware & Software               | CUDA              |
 | Signal Processing methods         | Anything remotely invasive lol
 
@@ -22,9 +22,9 @@ By the way, I recognize that public consciousness of BCI is pretty weak aside fr
 I hope to improve this obviously but this is the skill set and perspective I started this project with. Everything about the project itself I plan put over in the **Dev Blog**
 
 
-My experience is in working in Neuroscience and human factors labs as a post-baccalaureate. But here is brief outline of the two major projects that inform what I know now:
+My experience is in working in Neuroscience and Human Factors labs as a post-baccalaureate. But here is brief outline of the two major projects that inform what I know now:
 
 | Project Name             | Brief Description       | Principal Methods Involved          | P.I.                  |
 | ------------------------ | ----------------  | ------------------------------------|---------------------- |
 | LEARNER Project          | Developing an adaptive training <br>platform for mass-casualty triage <br>and patient handling tasks using <br>XR.                  | AR & VR, exoskeletons               | Dr. Ranjana Mehta     |
-| R01 Longitudinal Study  | Tracking longitudinal changes in <br>cerebello-cortical networks and <br>function across the adult lifespan.                       | MRI, Cognitive & behavioral testing | Dr. Jessica Bernard   |
+| R01 Longitudinal Study  | Tracking longitudinal changes in <br>cerebello-cortical networks and <br>function across the adult lifespan.                       | MRI, cognitive & behavioral testing | Dr. Jessica Bernard   |

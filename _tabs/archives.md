@@ -9,7 +9,9 @@ order: 2
 
 - peter.selly@tamu.edu
 
+#### Linkedin
 
+https://www.linkedin.com/in/peter-s-6826a1a4/
 
 #### X: 
 - <https://x.com/peterkselly>

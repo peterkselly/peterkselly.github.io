@@ -9,7 +9,7 @@ include:
 ---
 
 ## What does it measure?
-Not neuronal firings. In the cortex there are pyramidal neurons that are positioned perpendicular to the scalp --maybe *orthogonal* would be more accurate to say. When these cells fire there there is an extremely complicated cascade of cellular events that leads to an asymmetric change in the relative charge or areas outside the cell. These are so called **local field potentials (LFPs)**, the video below explains it very well. Because there are so many of these pyramidal neurons and they are all faced the same way, if we zoom out, what happens is that areas of cortical tissue hold polar charge as a function of net activity that can conduct up to the scalp. 
+Not neuronal firings. In the cortex there are pyramidal neurons that are positioned perpendicular to the scalp --maybe *orthogonal* would be more accurate to say. When these cells fire there there is an extremely complicated cascade of cellular events that leads to an asymmetric change in the relative charge of areas outside the cell. These are so called **local field potentials (LFPs)**, the video below explains it very well. Because there are so many of these pyramidal neurons and they are all faced the same way, if we zoom out, what happens is that areas of cortical tissue hold polar charge as a function of net activity that can conduct up to the scalp. 
 
 {% include embed/youtube.html id='i2St7BeRz6A?si=WBET93Zm4PGEnt0l&t=195' %}
 
@@ -27,7 +27,7 @@ These are incredibly weak analog signals subject to noise.
 | Resistance                        | 1–100 kΩ          |
 | Current                           | **1–10 nA!**      |
 
-Also, there's a natural low pass filter the scalp provides that attenuate higher frequencies, though I doubt that will be a problem for us given the frequencies necessary for motor decoding (Mu Waves ~10-15Hz).
+Also, there's a natural low pass filter the scalp provides that attenuate higher frequencies, though I doubt that will be a problem for us given the frequencies necessary for motor decoding (Mu & Beta Waves ~7.5-35Hz) See [Demandt et all (2012)](https://doi.org/10.3389/fnins.2012.00065) for more.
 
 ### Electrode Placement & Spacing
 

@@ -17,7 +17,7 @@ _Pipeline for software side with noted state of the data along each step_
 
 #### Signal Acquisition Module (SAM)
 
-The job of this module is to acquire the data from the hardware device and organize it in a way that is interpretable. Via USB it receives a serial stream of 32-bit fixed-point voltage conversions of each channel in real-time, meaning they are de facto ordered by time too. The firmware on the DSP chip I'm using will multiplex the ADCs in a defined and predictable way. It's job then is to fill 19 1-D arrays, one per channel, with these voltage values until the arrays get to a defined size. Then it sends those arrays to the next module.
+The job of this module is to acquire the data from the hardware device and organize it in a way that is interpretable. Via USB it receives a serial stream of 32-bit fixed-point voltage conversions of each channel in real-time, meaning they are de facto ordered by time too. The firmware on the DSP chip I'm using will multiplex the ADCs in a defined and predictable way. It's job then is to fill 19 1-D arrays, one per channel, with these voltage values until the arrays get to a defined size. Then it sends those arrays as packets to the next module.
 
 #### Signal Processing Module (SPM)
 

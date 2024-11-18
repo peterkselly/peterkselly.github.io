@@ -27,7 +27,7 @@ There are only 3 principal components, I told you the job was simple.
 
 #### Instrumentation Amplifiers (IA)
 
-The only one on the electrode board. This takes two inputs, the electrode signal and a common earlobe reference, and outputs the amplified difference. The earlobe is commonly used for this purpose because there's nothing crazy happening under the skin like with the scalp, we can use this to normalize for the skin and heartbeat. There is an argument for having both inputs on the scalp which theoretically would be able to better reject interference from signals conducting across the skin. Maybe I'll test that configuration at a later date.
+The only one on the electrode board. This takes two inputs, the electrode signal and a common earlobe reference, and outputs the amplified difference. The earlobe is commonly used for this purpose because there's nothing crazy happening under the skin like with the scalp, we can use this to normalize for the skin and heartbeat. There is an argument for having both inputs on the scalp which theoretically would be able to better reject interference from signals conducting across the skin. Maybe I'll test that configuration at a later date. Yay for modularity!
 
 ![Desktop View](/assets/img/post-images/IMG_1136.png){: width="427" height="240" }
 _Electrode board prototype(I know I used the wrong kind of LED). ~6x7cm_
@@ -43,9 +43,9 @@ The configuration of the electrodes is in a hexagonally spaced grid of 19. Each 
 
 #### Analog to Digital Convertors (ADC)
 
-This digitizes the data for us so our computer can interpret it. For our prototype, we're using the AD7177. There's not much to say about this one, all the info about it can be found on the datasheet. There's 5 total since each has 4 pseudo-differential channels for our 19 inputs. Each can be synced using the config defined in the datasheet. Each will have a single serial data out which will be sent to the DSP through an SPI interface.
+This digitizes the data for us so our computer can interpret it.. There's not much to say about this one, all the info about it can be found on the datasheet. There're 5 total since each has 4 pseudo-differential channels for our 19 inputs. Each can be synced using the config defined in its datasheet. Each will have a single serial data out which will be sent to the DSP through an SPI interface.
 
 
 #### Digital Signal Processor (DSP)
 
-I picked out the ADSP-BF527 for this. The only functions of the DSP as of now is to drive the SPI clock for the ADCs and multiplex the 5 inputs from them to a single USB output. This can be done by writing simple firmware in C, just have to make sure it's filling the write buffers and the timing makes sense. This could certainly be done with a microcontroller to save around 20 bucks but this chip is capable of some signal processing that I could make use of later. I'd like to have some flexibility.
+The only functions of the DSP as of now is to drive the SPI clock for the ADCs and multiplex the 5 inputs from them to a single USB output. This can be done by writing simple firmware in C, just have to make sure it's filling the right buffers and the timing makes sense. This could certainly be done with a microcontroller to save some money but this chip is capable of some signal processing that I could make use of later. I'd like the prototype to have some flexibility.

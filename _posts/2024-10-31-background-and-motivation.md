@@ -18,7 +18,7 @@ include:
 It makes perfect sense why an emerging field would focus on a relatively well-explored system as they are developing their signal processing methods. Also, the micro-circuitry of the cortical column is consistent throughout the cortex, meaning in the future we may be able to use what we've learned in the motor domain to interface with more abstract things like attention or cognition. Absolutely crazy stuff.
 
 ---
-For those unaware, there's two primary categories of BCI: **Invasive** and **Non-invasive**
+For those unaware, there're two primary categories of BCI: **Invasive** and **Non-invasive**
 
 **Invasive** BCIs involve surgery or implanted devices. Usually in the form of electrodes implanted underneath the scalp. You can recognize these if you see the terms: Electrocorticography (ECoG), iEEG, or Utah-array. There's even some that use catheters and stints to plant electrodes inside your blood vessels!
 
