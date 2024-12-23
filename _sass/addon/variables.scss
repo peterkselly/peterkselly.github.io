@@ -12,6 +12,7 @@ $sidebar-width-collapsed: 80px;
   --sidebar-width: #{$sidebar-width}; /* Default expanded state */
   --sidebar-width-collapsed: #{$sidebar-width-collapsed}; /* Collapsed state */
 }
+
 $sidebar-width-large: 300px !default; /* screen width: >= 1650px */
 $sb-btn-gap: 0.8rem !default;
 $sb-btn-gap-lg: 1rem !default;
