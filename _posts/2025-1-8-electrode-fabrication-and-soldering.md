@@ -23,7 +23,7 @@ For the amount of material that had to be flattened, it made sense to do it it m
  with elliptical heads, though I don't think the electrons will care.
 
 ![Desktop View](/assets/img/post-images/electrode_fab/IMG_1302.png){: width="400" height="400" }
-_Electrodes within the board. A sheet of teflon that will protect the board from scalp oil and has a firm friction-fit with the electrode stems, making it easier to set depth_
+_Electrodes within the board. A sheet of teflon will protect the board from scalp oil and has a firm friction-fit with the electrode stems, making it easier to set depth_
 
 ![Desktop View](/assets/img/post-images/electrode_fab/IMG_1305.png){: width="400" height="400" }
 _Different angle_
