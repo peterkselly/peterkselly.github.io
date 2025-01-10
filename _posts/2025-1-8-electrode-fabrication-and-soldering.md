@@ -30,7 +30,7 @@ _Different angle_
 
 #### Setting depth to fit the curve of the mold
 
-As I wrote in a previous post, I have a paster mold of my scalp around the C4 of the 10-20 system. The next task was setting the depth using that mold so that It forms a comfortable curve over my scalp. That meant positioning the board securely above the mold and pushing the electrodes down to meet the curve of the mold. This way once I set that depth by soldering I should get a really good approximation for my head.
+As I wrote in a previous post, I have a paster mold of my scalp around the C4 of the 10-20 system. The next task was setting the depth using that mold so that It forms a comfortable curve over my scalp. That meant positioning the board securely above the mold and pushing the electrodes down to meet the curve of the mold. This way, once I set that depth by soldering I should get a really good approximation for my head.
 
 ![Desktop View](/assets/img/post-images/electrode_fab/IMG_1307.png){: width="400" height="400" }
 _A pretty sick vice holds the board in place over the mold. I was pretty off center with the mold after a second look so the popsicle sticks set the board to be a tangent plane over C4_
@@ -49,7 +49,7 @@ _Depressions made early on, you can see there are still hovering electrodes on t
 _Final dimples, every electrode lays over the curve making a depression in the putty_
 
 ![Desktop View](/assets/img/post-images/electrode_fab/IMG_1314.png){: width="400" height="400" }
-_Soldered surface of the electrode board. A little messy on some of them since I had to reflow the solder to reset the depth after the discoveries I mentioned earlier_
+_Soldered surface of the electrode board. A little messy on some of them since I had to reflow the solder to reset the depth after the discoveries I mentioned earlier. Also, I put more solder on J2 since taking this picture_
 
 ![Desktop View](/assets/img/post-images/electrode_fab/IMG_1315.png){: width="400" height="400" }
 _Final depths, approximately 5mm of a gap between the tips and the teflon. This "hair gap" is more then enough for me_
